@@ -2,9 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import Vehicles from "./pages/Vehicles";
-// import Trips from "./pages/Trips";
-// import Maintenance from "./pages/Maintenance";
-// import Fuel from "./pages/Fuel";
+import Trips from "./pages/Trips";
+import Maintenance from "./pages/Maintenance";
+import Fuel from "./pages/Fuel";
 
 export default function App() {
   return (
@@ -15,9 +15,9 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/vehicles" element={<Vehicles />} />
-            {/* <Route path="/trips" element={<Trips />} />
+            <Route path="/trips" element={<Trips />} />
             <Route path="/maintenance" element={<Maintenance />} />
-            <Route path="/fuel" element={<Fuel />} /> */}
+            <Route path="/fuel" element={<Fuel />} />
           </Routes>
         </div>
       </div>
